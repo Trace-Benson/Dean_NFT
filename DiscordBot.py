@@ -4,9 +4,12 @@ from Leaderboard import Leaderboard
 from Arena import Arena
 
 
+with open("key.txt", "r") as f:
+    token = f.read()
+
 bot = commands.Bot(command_prefix="!")
 stick_csv_path = "cryptostykz_v3.csv"
-token = "ODkzMTUxNjA0MjcyOTI2NzIx.YVXSQA.v1wSt6knVE9UUhyMgSQz5FrCoHg"
+#token = "ODkzMTUxNjA0MjcyOTI2NzIx.YVXSQA.v1wSt6knVE9UUhyMgSQz5FrCoHg"
 client = discord.Client()
 leaderboard = Leaderboard()
 arena = Arena(["cryptostykz_v3.csv"])
